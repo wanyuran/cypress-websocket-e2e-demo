@@ -1,0 +1,17 @@
+# IntelliJ idea
+.idea/
+/idea/
+.DS_Store
+*/.DS_Store
+
+# Depencency
+node_modules/
+
+# Log Files
+*.log
+
+# others
+cypress/integration/specs/test.js
+cypress/screenshots/
+cypress/videos/
+mochawesome-report/

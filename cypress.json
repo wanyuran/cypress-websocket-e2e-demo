@@ -1,0 +1,10 @@
+{
+  "integrationFolder": "cypress/integration/specs",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  },
+  "projectId": "XXXXX"
+}
