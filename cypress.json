@@ -6,5 +6,6 @@
     "html": false,
     "json": true
   },
-  "projectId": "XXXXX"
+  "projectId": "XXXXXX",
+  "defaultEnv": "QA"
 }

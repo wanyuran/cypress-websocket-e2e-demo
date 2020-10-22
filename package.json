@@ -1,15 +1,19 @@
 {
   "devDependencies": {
     "axios": "^0.19.2",
+    "colors": "^1.4.0",
+    "commander": "^6.1.0",
     "cypress": "^4.5.0",
     "cypress-file-upload": "^4.0.7",
     "cypress-localstorage-commands": "^1.2.1",
+    "cypress-select-tests": "^1.5.8",
     "eslint-plugin-chai-friendly": "^0.6.0",
     "eslint-plugin-cypress": "^2.10.3",
     "fs-extra": "^9.0.1",
     "mochawesome": "^6.1.1",
     "mochawesome-merge": "^4.1.0",
     "mochawesome-report-generator": "^5.1.0",
+    "moment": "^2.29.1",
     "qs": "^6.9.4",
     "rxjs": "^6.5.5",
     "socket.io-client": "^2.3.0",
@@ -18,8 +22,9 @@
   "scripts": {
     "start": "cypress open",
     "start:debug": "DEBUG=cypress:* cypress run",
-    "test:report": "node scripts/cypress.js",
-    "test:mocha": "cypress run --reporter=spec --record --key <record key>"
+    "test": "cypress run",
+    "test:report": "node scripts/moduleRunIndex.js",
+    "test:project": "cypress run --reporter=spec --record --key 74862abb-201a-47a8-8d56-428e5409527e"
   },
   "dependencies": {
     "cypress-commands": "^1.1.0",

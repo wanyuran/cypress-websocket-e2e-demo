@@ -20,3 +20,9 @@ import './commands'
 // require('./commands')
 
 import 'cypress-commands'
+import {getEnv} from '../env.config';
+import '../../scripts/pickTest.js';
+beforeEach(() => {
+  const testEnv = getEnv();
+  cy.log(`测试环境为：\n${JSON.stringify(testEnv)}`);
+});
